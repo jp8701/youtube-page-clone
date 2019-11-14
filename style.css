@@ -113,18 +113,8 @@ aside {
   grid-template-rows: auto;
   grid-template-areas: "main main aside"
                         "section section aside";
-  /* background:mistyrose; */
   padding: 1rem 3rem;
 }
-
-.comments-container {
-  /* background: skyblue; */
-}
-
-.reco-container {
-  /* background: steelblue; */
-}
-
 
 /* Video Container */
 .video-container .video-content iframe {
@@ -236,4 +226,108 @@ aside {
 }
 .reco-content div {
   margin-bottom: 0.25rem;
+}
+
+
+@media (max-width: 1100px) {
+  .navigation-container {
+    padding: 1rem ;
+  }
+
+  #nav-main img {
+    width: 25px;
+  }
+
+  #nav-main .search-bar input {
+    width: 200px;
+  }
+
+  #showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "main main"
+                          "aside aside"
+                          "section section";
+    padding: 1rem 3rem;
+  }
+
+  .video-container .views-number p,
+  .video-container .video-likes i span {
+    font-size: 13.5px;
+  }
+  .video-container .video-likes i {
+    margin-right: 0.55rem;
+  }
+  
+  .video-container .video-likes i span {
+    padding-left: 0.30rem ;
+  }
+
+  .reco-container {
+    margin-bottom: 1rem;
+  }
+
+  .reco-container .chat-btn,
+  .reco-container hr {
+    display: none;
+  }
+
+  .comments-container .comments-summary {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  #nav-main {
+    align-content: center;
+  }
+
+  #nav-main img {
+    width: 15px;
+  }
+
+  #nav-main .search-bar input {
+    width: 90px;
+  }
+
+  #nav-main .nav-left a span {
+    font-size: 0.75rem;
+  }
+
+  .nav-left a,
+  .nav-right a {
+    margin-right: 0.30rem;
+  }
+
+  #showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "main"
+                          "aside"
+                          "section";
+  }
+
+  .video-container .video-content iframe {
+    width: 300px;
+    height: 300px;
+  }
+
+  .video-container .views-number p {
+    display: none;
+  }
+
+  .video-container .video-likes {
+    margin: 0.75rem 0;
+  }
+
+  .reco-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75rem;
+  }
 }
