@@ -183,7 +183,7 @@ aside {
 .comments-container .comments-summary {
   display: flex;
   margin-bottom: 2rem;
-  margin-top: -8rem;
+  margin-top: -6rem;
 }
 
 .comments-summary p {
@@ -221,7 +221,7 @@ aside {
 
 .reco-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   grid-gap: 0.75rem;
 }
 .reco-content div {
@@ -232,7 +232,7 @@ aside {
   width: 100%;
 }
 
-
+/* Media Queries */
 
 @media (max-width: 1100px) {
   .navigation-container {
@@ -281,7 +281,6 @@ aside {
   .comments-container .comments-summary {
     display: flex;
     margin-bottom: 2rem;
-    margin-top: 1rem;
   }
 
 }
